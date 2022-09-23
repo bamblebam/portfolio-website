@@ -43,10 +43,11 @@ function initTheme() {
  */
 function resetTheme() {
   if (darkSwitch.checked) {
-    document.body.setAttribute("data-theme", "dark");
-    localStorage.setItem("darkSwitch", "dark");
-  } else {
     document.body.removeAttribute("data-theme");
     localStorage.removeItem("darkSwitch");
+    
+  } else {
+    document.body.setAttribute("data-theme", "dark");
+    localStorage.setItem("darkSwitch", "dark");
   }
 }
